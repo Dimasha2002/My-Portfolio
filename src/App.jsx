@@ -201,7 +201,14 @@ function App() {
             <div className="certification-item">
               <h3>AI/ML Engineer - Stage 2</h3>
               <p>Centre for Open and Distance Education, Faculty of Computing, SLIIT</p>
-              <span className="cert-status">Certificate Link Available Soon</span>
+              <a 
+                href="https://code.sliit.org/certificates/f5etbxgfb5" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="cert-link"
+              >
+                View Certificate
+              </a>
             </div>
           </div>
         </div>
