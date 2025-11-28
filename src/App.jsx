@@ -189,26 +189,46 @@ function App() {
             <div className="certification-item">
               <h3>AI/ML Engineer - Stage 1</h3>
               <p>Centre for Open and Distance Education, Faculty of Computing, SLIIT</p>
-              <a 
-                href="https://code.sliit.org/certificates/ooz2pnny58" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="cert-link"
-              >
-                View Certificate
-              </a>
+              <div className="cert-actions">
+                <a 
+                  href="https://code.sliit.org/certificates/ooz2pnny58" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  View Certificate
+                </a>
+                <a 
+                  href="/AIML1-SLIIT.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  Download Certificate
+                </a>
+              </div>
             </div>
             <div className="certification-item">
               <h3>AI/ML Engineer - Stage 2</h3>
               <p>Centre for Open and Distance Education, Faculty of Computing, SLIIT</p>
-              <a 
-                href="https://code.sliit.org/certificates/f5etbxgfb5" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="cert-link"
-              >
-                View Certificate
-              </a>
+              <div className="cert-actions">
+                <a 
+                  href="https://code.sliit.org/certificates/f5etbxgfb5" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  View Certificate
+                </a>
+                <a 
+                  href="/AIML2-SLIIT.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  Download Certificate
+                </a>
+              </div>
             </div>
             <div className="certification-item">
               <h3>Front-End Web Development</h3>

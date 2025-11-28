@@ -489,17 +489,28 @@ body {
   font-weight: 500;
 }
 
+.cert-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .cert-link {
   display: inline-block;
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: white;
-  padding: 0.6rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  flex: 1;
+  text-align: center;
+  min-width: 140px;
 }
 
 .cert-link:hover {
