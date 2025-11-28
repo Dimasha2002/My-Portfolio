@@ -210,6 +210,18 @@ function App() {
                 View Certificate
               </a>
             </div>
+            <div className="certification-item">
+              <h3>Front-End Web Development</h3>
+              <p>Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka</p>
+              <a 
+                href="/frontend-web-dev-certificate.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="cert-link"
+              >
+                Download Certificate
+              </a>
+            </div>
           </div>
         </div>
       </section>
