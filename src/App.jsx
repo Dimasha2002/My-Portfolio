@@ -150,7 +150,7 @@ function App() {
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>5+</h3>
+                  <h3>3+</h3>
                   <p>Projects Completed</p>
                 </div>
                 <div className="stat">
