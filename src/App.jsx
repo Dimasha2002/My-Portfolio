@@ -37,6 +37,12 @@ function App() {
 
   const projects = [
     {
+      title: "PayMyHostel",
+      description: "A hostel payment management system built with MERN stack. Features two main sections: Admin section for managing hostel operations, payments, and student accounts, and Student section for viewing payment history and making fee payments.",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"],
+      github: "https://github.com/Dimasha2002/PayMyHostel"
+    },
+    {
       title: "TraceBack",
       description: "A lost and found mobile app that helps users report and find missing items in their community. Features include item reporting, search functionality, and location-based matching.",
       technologies: ["Android Studio", "Kotlin", "Java", "XML"],
@@ -150,8 +156,8 @@ function App() {
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>3+</h3>
-                  <p>Projects Completed</p>
+                  <h3>4+</h3>
+                  <p>Projects<br />Completed</p>
                 </div>
                 <div className="stat">
                   <h3>3rd</h3>
