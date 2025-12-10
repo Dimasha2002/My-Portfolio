@@ -108,10 +108,13 @@ function App() {
             <h2>Undergraduate Student - SLIIT</h2>
             <p>Third year first semester student at Faculty of Computing, SLIIT. Passionate about creating innovative software solutions.</p>
             <div className="hero-buttons">
-              <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
+              <a href="/Dimasha_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Download CV
+              </a>
+              <button className="btn btn-secondary" onClick={() => scrollToSection('projects')}>
                 View My Work
               </button>
-              <button className="btn btn-secondary" onClick={() => scrollToSection('contact')}>
+              <button className="btn btn-tertiary" onClick={() => scrollToSection('contact')}>
                 Get In Touch
               </button>
             </div>
