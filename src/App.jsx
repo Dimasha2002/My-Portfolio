@@ -288,6 +288,50 @@ function App() {
                 Download Certificate
               </a>
             </div>
+            <div className="certification-item">
+              <h3>Web Development Basics</h3>
+              <p>IBM SkillBuild, Adobe Learning Manager</p>
+              <div className="cert-actions">
+                <a 
+                  href="https://skills.yourlearning.ibm.com/certificate/share/626248598dewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI2NDEzNTUwUkVHIiwKICAib2JqZWN0SWQiIDogIkFMTS1DT1VSU0VfNDA1ODkzNyIKfQc846df278f-10" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  View Certificate
+                </a>
+                <a 
+                  href="/Web Development Basics.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+            <div className="certification-item">
+              <h3>Developing Sites for the Web</h3>
+              <p>IBM SkillBuild, Adobe Learning Manager</p>
+              <div className="cert-actions">
+                <a 
+                  href="https://skills.yourlearning.ibm.com/certificate/share/4443e8c86cewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTM4IiwKICAibGVhcm5lckNOVU0iIDogIjY0MTM1NTBSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQ00982a9ac2-10" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  View Certificate
+                </a>
+                <a 
+                  href="/Developing Sites for the Web.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  Download Certificate
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
