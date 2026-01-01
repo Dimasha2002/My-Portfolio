@@ -37,6 +37,19 @@ function App() {
 
   const projects = [
     {
+      title: "EduQuiz - frontend",
+      description: "Deployed interactive learning platform with teacher and student dashboards. Teachers create quizzes, students take tests and view results. Features real-time scoring and responsive design across all devices.",
+      technologies: ["React", "Vite", "React Router", "Tailwind CSS", "Axios"],
+      github: "https://github.com/Dimasha2002/eduquiz-platform-frontend",
+      live: "https://eduquiz-platform-frontend.onrender.com/"
+    },
+    {
+      title: "EduQuiz - backend",
+      description: "Deployed RESTful API server for educational quiz platform. Manages user authentication, teacher/student roles, module creation, quiz management, and student enrollments with MongoDB Atlas database.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "JWT", "bcryptjs", "Nodemailer"],
+      github: "https://github.com/Dimasha2002/eduquiz-platform-backend",
+    },
+    {
       title: "PassPilot",
       description: "Deployed web application for generating secure passwords with customizable options. Features include real-time password generation, dark mode toggle, and responsive design across all devices.",
       technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
@@ -172,7 +185,7 @@ function App() {
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>6+</h3>
+                  <h3>8+</h3>
                   <p>Projects<br />Completed</p>
                 </div>
                 <div className="stat">
