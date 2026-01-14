@@ -345,6 +345,28 @@ function App() {
                 </a>
               </div>
             </div>
+            <div className="certification-item">
+              <h3>Foundational C# with Microsoft</h3>
+              <p>freeCodeCamp</p>
+              <div className="cert-actions">
+                <a 
+                  href="https://freecodecamp.org/certification/dimasha/foundational-c-sharp-with-microsoft" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  View Certificate
+                </a>
+                <a 
+                  href="/C# certificate.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cert-link"
+                >
+                  Download Certificate
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
