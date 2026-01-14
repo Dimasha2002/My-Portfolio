@@ -66,7 +66,8 @@ function App() {
       title: "PayMyHostel",
       description: "A hostel payment management system built with MERN stack. Features two main sections: Admin section for managing hostel operations, payments, and student accounts, and Student section for viewing payment history and making fee payments.",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "HTML5", "CSS3"],
-      github: "https://github.com/Dimasha2002/PayMyHostel"
+      github: "https://github.com/Dimasha2002/PayMyHostel",
+      live: "https://paymyhostel-frontend.onrender.com/"
     },
     {
       title: "TraceBack",
