@@ -105,3 +105,26 @@ Replace placeholder images with your own:
 ## License
 
 This project is open source and available under the MIT License.
+
+## Live Preview / Deployment
+
+- Quick local preview:
+   ```bash
+   npm install
+   npm run dev
+   # open http://localhost:5173
+   ```
+
+- Deploy to Vercel (recommended):
+   1. Push this repository to GitHub.
+   2. Sign in to Vercel and import the repo (Vite preset). The included `vercel.json` uses `npm run build` and `dist`.
+   3. Or use Vercel CLI from the project root:
+       ```bash
+       npm i -g vercel
+       vercel
+       # follow prompts, then `vercel --prod` to publish
+       ```
+
+Notes:
+- `npm run build` creates the production files in `dist`.
+- `vercel.json` includes a rewrite for single-page routing.

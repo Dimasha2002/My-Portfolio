@@ -50,6 +50,19 @@ function App() {
       github: "https://github.com/Dimasha2002/eduquiz-platform-backend",
     },
     {
+      title: "PayMyHostel - frontend",
+      description: "Deployed responsive frontend for a hostel payment management system with separate admin and student views, focused on clean UI, usability, and mobile-first design.",
+      technologies: ["React.js", "JavaScript", "HTML5", "CSS3"],
+      github: "https://github.com/Dimasha2002/PayMyHostel-frontend",
+      live: "https://paymyhostel-frontend.onrender.com/"
+    },
+    {
+      title: "PayMyHostel - backend",
+      description: "Deployed backend for a hostel payment management system, handling authentication, role-based access, payment records, and secure data management through RESTful APIs.",
+      technologies: [ "Node.js", "Express.js", "MongoDB"],
+      github: "https://github.com/Dimasha2002/PayMyHostel-backend",
+    },
+    {
       title: "PassPilot",
       description: "Deployed web application for generating secure passwords with customizable options. Features include real-time password generation, dark mode toggle, and responsive design across all devices.",
       technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
@@ -58,16 +71,9 @@ function App() {
     },
     {
       title: "MyCVLab",
-      description: "A comprehensive full-stack web application that empowers users to create professional CVs with ease. Users can register, input their personal and professional details, and automatically generate three distinct CV templates. The platform offers seamless preview functionality and PDF download capabilities.",
+      description: "Full-stack web application for creating professional CVs, allowing users to generate multiple CV templates with live preview and PDF download functionality.",
       technologies: ["React", "Vite", "Node.js", "Express", "MongoDB Atlas", "Tailwind CSS"],
       github: "https://github.com/Dimasha2002/MyCVLab"
-    },
-    {
-      title: "PayMyHostel",
-      description: "A hostel payment management system built with MERN stack. Features two main sections: Admin section for managing hostel operations, payments, and student accounts, and Student section for viewing payment history and making fee payments.",
-      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "HTML5", "CSS3"],
-      github: "https://github.com/Dimasha2002/PayMyHostel",
-      live: "https://paymyhostel-frontend.onrender.com/"
     },
     {
       title: "TraceBack",
@@ -186,7 +192,7 @@ function App() {
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>8+</h3>
+                  <h3>9+</h3>
                   <p>Projects<br />Completed</p>
                 </div>
                 <div className="stat">
