@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import './App.css'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -96,14 +97,23 @@ function App() {
   ]
 
   const skills = [
-    { name: "React" },
+    { name: "Java" },
     { name: "JavaScript" },
-    { name: "Node.js" },
     { name: "Python" },
+    { name: "HTML5" },
+    { name: "C#" },
+    { name: "CSS3" },
     { name: "R" },
-    { name: "SQL" },
+    { name: " React.js" },
+    { name: "UI/UX Design" },
+    { name: "Node.js" },
+    { name: "Express.js" },
     { name: "MongoDB" },
-    { name: "CSS" }
+    { name: " Git & GitHub" },
+    { name: "Postman" },
+    { name: "Android Development" },
+    { name: "Problem Solving" },
+    { name: "Time Management" }
   ]
 
   return (
@@ -134,13 +144,47 @@ function App() {
       </nav>
 
       {/* Hero Section */}
+
       <section id="home" className="hero">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>Hi, I'm <span className="highlight">Dimasha Hansani Abeywickrama</span></h1>
-            <h2>Undergraduate Student - SLIIT</h2>
-            <p>Third year first semester student at Faculty of Computing, SLIIT. Passionate about creating innovative software solutions.</p>
-            <div className="hero-buttons">
+        <motion.div 
+          className="hero-content"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div 
+            className="hero-text"
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+            >
+              Hi, I'm <span className="highlight">Dimasha Hansani Abeywickrama</span>
+            </motion.h1>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+            >
+              Undergraduate Student - SLIIT
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.7 }}
+            >
+              Third year first semester student at Faculty of Computing, SLIIT. Passionate about creating innovative software solutions.
+            </motion.p>
+            <motion.div 
+              className="hero-buttons"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.9 }}
+            >
               <a href="/Dimasha _CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Download CV
               </a>
@@ -150,8 +194,13 @@ function App() {
               <button className="btn btn-tertiary" onClick={() => scrollToSection('contact')}>
                 Get In Touch
               </button>
-            </div>
-            <div className="hero-social">
+            </motion.div>
+            <motion.div 
+              className="hero-social"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 1.1 }}
+            >
               <a href="https://www.linkedin.com/in/dimasha2002" target="_blank" rel="noopener noreferrer" className="hero-social-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -164,14 +213,24 @@ function App() {
                 </svg>
                 <span>GitHub</span>
               </a>
-            </div>
-          </div>
-          <div className="hero-image">
-            <div className="hero-avatar">
-              <img src="/profile.jpg" alt="Dimasha Hansani Abeywickrama" />
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+          <motion.div 
+            className="hero-image"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 1.3 }}
+          >
+            <motion.div 
+              className="hero-avatar"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 1.3 }}
+            >
+              <img src="/profile.png" alt="Dimasha Hansani Abeywickrama" />
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </section>
 
       {/* About Section */}
