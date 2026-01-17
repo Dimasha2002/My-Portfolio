@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import './App.css'
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
