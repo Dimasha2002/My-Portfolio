@@ -38,6 +38,19 @@ function App() {
 
   const projects = [
     {
+      title: "Doctor365 (Group Project)",
+      description: "Developed the Appointment Service for a healthcare platform, handling appointment booking, updates, cancellations, status management, secure user access, and containerized service deployment.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "Docker", "Kubernetes"],
+      github: "https://github.com/ChamudithaSanka/doctor365"
+    },
+    {
+      title: "OpenLesson (Group Project)",
+      description: "Developed the Teacher Management module for an educational platform connecting volunteer teachers and students, including dashboards, study materials, sessions, quizzes, profiles, and live virtual teaching using Zoom API.",
+      technologies: ["Node.js", "Express.js", "MongoDB", "RESTful APIs", "JWT"],
+      github: "https://github.com/ChamudithaSanka/openlesson",
+      live: "https://openlesson-sooty.vercel.app/"
+    },
+    {
       title: "EduQuiz - frontend",
       description: "Deployed interactive learning platform with teacher and student dashboards. Teachers create quizzes, students take tests and view results. Features real-time scoring and responsive design across all devices.",
       technologies: ["React", "Vite", "React Router", "Tailwind CSS", "Axios"],
@@ -241,7 +254,7 @@ function App() {
             <div className="about-text">
               <p>
                 I'm an undergraduate student at the Faculty of Computing, SLIIT, currently in my 
-                third year first semester. I'm passionate about software development and technology, 
+                third year. I'm passionate about software development and technology, 
                 with a focus on creating innovative solutions through code.
               </p>
               <p>
@@ -251,7 +264,7 @@ function App() {
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>9+</h3>
+                  <h3>10+</h3>
                   <p>Projects<br />Completed</p>
                 </div>
                 <div className="stat">
