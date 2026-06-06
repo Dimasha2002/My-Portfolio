@@ -38,74 +38,102 @@ function App() {
 
   const projects = [
     {
-      title: "Doctor365 (Group Project)",
-      description: "Developed the Appointment Service for a healthcare platform, handling appointment booking, updates, cancellations, status management, secure user access, and containerized service deployment.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "Docker", "Kubernetes"],
-      github: "https://github.com/ChamudithaSanka/doctor365"
+      title: "Doctor365 - Telemedicine Platform",
+      subtitle: "SE3020 Distributed Systems Group Project",
+      timeline: "Feb–Apr 2026 (2 months)",
+      role: "Group Project — Appointment Service Lead",
+      description: "Microservice for multi-actor healthcare appointment workflows with secure role-based access and zero-downtime deployment.",
+      problem: "Multi-actor appointment system needed for healthcare platform (doctors, patients, admins).",
+      solution: "Built a microservice with RESTful APIs for booking, rescheduling, cancellation, RBAC, and Kubernetes deployment.",
+      myContribution: "Appointment data model, RESTful APIs (doctor/patient/admin workflows), RBAC, containerization, Postman testing.",
+      buildPurpose: "Production-ready microservice for end-to-end appointment workflows with secure multi-tenant access and zero-downtime deployment.",
+      verification: "Integration tests, API contract validation (Postman), database consistency checks.",
+      lessonsLearned: "RBAC design patterns, availability caching vs. real-time accuracy trade-offs, containerization best practices.",
+      technologies: ["Node.js", "Express", "MongoDB", "React", "JWT", "Docker", "Kubernetes"],
+      github: "https://github.com/ChamudithaSanka/doctor365",
+      image: "/doctor365.png"
     },
     {
-      title: "OpenLesson (Group Project)",
-      description: "Developed the Teacher Management module for an educational platform connecting volunteer teachers and students, including dashboards, study materials, sessions, quizzes, profiles, and live virtual teaching using Zoom API.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "RESTful APIs", "JWT"],
+      title: "OpenLesson - Volunteer Teaching Platform",
+      subtitle: "SE3040 Application Framework Group Project",
+      timeline: "Feb–Apr 2026 (2 months)",
+      role: "Group Project — Teacher Management Lead",
+      description: "Volunteer teaching platform with teacher dashboards, live lessons, quizzes, and payment support.",
+      problem: "Connect volunteer/paid teachers with students for scheduling, materials, assessments, live lessons, and payouts.",
+      solution: "Built teacher/dashboard, study library, scheduling, auto-graded quizzes, Zoom live lessons, and PayHere payment workflows.",
+      myContribution: "Data models, REST APIs, Zoom & payment integration, core frontend components, and integration tests.",
+      verification: "Integration tests and API validation for real-time teaching and payment flows.",
+      lessonsLearned: "API integration, payment flow design, and real-time collaboration for education platforms.",
+      technologies: ["Node.js", "Express", "MongoDB", "React", "Socket.IO", "Zoom API", "PayHere", "JWT"],
       github: "https://github.com/ChamudithaSanka/openlesson",
-      live: "https://openlesson-sooty.vercel.app/"
+      live: "https://openlesson-sooty.vercel.app/",
+      image: "/openlesson.png"
     },
     {
-      title: "EduQuiz - frontend",
-      description: "Deployed interactive learning platform with teacher and student dashboards. Teachers create quizzes, students take tests and view results. Features real-time scoring and responsive design across all devices.",
-      technologies: ["React", "Vite", "React Router", "Tailwind CSS", "Axios"],
+      title: "EduQuiz — Online Quiz & Learning Platform",
+      subtitle: "Individual Project",
+      timeline: "Jan–Feb 2026 (2 weeks core, 1 month polish & testing)",
+      role: "Individual — 100% solo",
+      description: "Full-stack quiz platform with teacher CMS, student progress tracking, and responsive learning UI.",
+      problem: "Need for a lightweight, easy-to-maintain role-based quizzing platform for teachers and students.",
+      solution: "Built a fast full-stack app with teacher module/quizzes and responsive student UI that records attempts and progress.",
+      myContribution: "Designed data model, backend APIs, auth, role-based frontend, deployment scripts, and tests.",
+      buildPurpose: "Deliver a minimal production-ready demo showing end-to-end teacher → student workflows.",
+      verification: "Jest + Supertest unit/integration tests, E2E smoke tests, Postman API checks, and DB verification.",
+      lessonsLearned: "Improved role-based access design, data modeling for performance, and UX edge-case discovery via E2E tests.",
+      technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT", "bcrypt", "Docker"],
       github: "https://github.com/Dimasha2002/eduquiz-platform-frontend",
-      live: "https://eduquiz-platform-frontend.onrender.com/"
+      live: "https://eduquiz-platform-frontend.onrender.com/",
+      image: "/eduquiz.png"
     },
     {
-      title: "EduQuiz - backend",
-      description: "Deployed RESTful API server for educational quiz platform. Manages user authentication, teacher/student roles, module creation, quiz management, and student enrollments with MongoDB Atlas database.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "JWT", "bcryptjs", "Nodemailer"],
-      github: "https://github.com/Dimasha2002/eduquiz-platform-backend",
-    },
-    {
-      title: "PayMyHostel - frontend",
-      description: "Deployed responsive frontend for a hostel payment management system with separate admin and student views, focused on clean UI, usability, and mobile-first design.",
-      technologies: ["React.js", "JavaScript", "HTML5", "CSS3"],
+      title: "PayMyHostel — Hostel Payment Management System",
+      subtitle: "Individual Project — Full Stack Developer",
+      timeline: "Dec 2025–Jan 2026 (1 month)",
+      role: "Individual Project — Full Stack Developer",
+      description: "Responsive hostel payment system with admin/student workflows, secure auth, and transaction management.",
+      problem: "Hostel needed secure student/admin payment tracking, notice management, and role-based access across mobile-friendly interfaces.",
+      solution: "Built a full-stack app with RESTful backend, secure RBAC, and responsive React frontend for student/admin use.",
+      myContribution: "Auth/authorization, payment and room management APIs, frontend UI/UX, responsive pages, and secure end-to-end flow.",
+      buildPurpose: "Deliver a production-ready hostel payment platform with clean mobile-first UX and reliable transactions.",
+      verification: "Manual API testing, RBAC validation, UI responsiveness checks, and MongoDB data consistency.",
+      lessonsLearned: "End-to-end RBAC, secure API design, responsive frontend patterns, and single-developer full-stack delivery.",
+      technologies: ["Node.js", "Express", "MongoDB", "React", "Vite", "JWT", "REST APIs", "CSS"],
       github: "https://github.com/Dimasha2002/PayMyHostel-frontend",
-      live: "https://paymyhostel-frontend.onrender.com/"
+      live: "https://paymyhostel-frontend.onrender.com/",
+      image: "/paymyhostel.png"
     },
     {
-      title: "PayMyHostel - backend",
-      description: "Deployed backend for a hostel payment management system, handling authentication, role-based access, payment records, and secure data management through RESTful APIs.",
-      technologies: [ "Node.js", "Express.js", "MongoDB"],
-      github: "https://github.com/Dimasha2002/PayMyHostel-backend",
+      title: "MyWellness — Habit Tracker",
+      subtitle: "Individual Mobile App",
+      timeline: "Sep–Oct 2025 (1 month)",
+      role: "Individual Project — Mobile Developer",
+      description: "Android app for habits, reminders, streaks, progress charts, and offline persistence.",
+      problem: "Users struggled to form and maintain daily wellness habits consistently.",
+      solution: "Built a habit tracker with daily check-ins, reminders, progress charts, badges, and export support.",
+      myContribution: "UX design, habit data model, Room persistence, WorkManager reminders, Compose UI, Firebase auth/sync, and tests.",
+      buildPurpose: "Production-ready mobile app supporting habit formation with offline-first persistence and reminders.",
+      verification: "Unit tests, Espresso UI tests, manual device testing, notification simulation, and data verification.",
+      lessonsLearned: "Offline-first persistence, WorkManager scheduling edge cases, Compose state management, and habit UX.",
+      technologies: ["Kotlin", "Jetpack Compose", "Room", "WorkManager", "Firebase Auth", "Retrofit", "Coroutines", "Hilt", "MPAndroidChart"],
+      github: "https://github.com/Dimasha2002/MyWellness",
+      image: "/mywellness.png"
     },
     {
-      title: "PassPilot",
-      description: "Deployed web application for generating secure passwords with customizable options. Features include real-time password generation, dark mode toggle, and responsive design across all devices.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
-      github: "https://github.com/Dimasha2002/PassPilot",
-      live: "https://pass-pilot.vercel.app/"
-    },
-    {
-      title: "MyCVLab",
-      description: "Full-stack web application for creating professional CVs, allowing users to generate multiple CV templates with live preview and PDF download functionality.",
-      technologies: ["React", "Vite", "Node.js", "Express", "MongoDB Atlas", "Tailwind CSS"],
-      github: "https://github.com/Dimasha2002/MyCVLab"
-    },
-    {
-      title: "TraceBack",
-      description: "A lost and found mobile app that helps users report and find missing items in their community. Features include item reporting, search functionality, and location-based matching.",
-      technologies: ["Android Studio", "Kotlin", "Java", "XML"],
-      github: "https://github.com/Dimasha2002/TraceBackAPP"
-    },
-    {
-      title: "MyWellness",
-      description: "A habit tracker app designed to help users build and maintain healthy daily routines. Track your wellness goals, monitor progress, and develop positive habits consistently.",
-      technologies: ["Android Studio", "Kotlin", "Java", "XML", "SharedPreferences"],
-      github: "https://github.com/Dimasha2002/MyWellness"
-    },
-    {
-      title: "WellnessTracker",
-      description: "A comprehensive habit tracker app that empowers users to create, monitor, and achieve their personal wellness goals through daily habit tracking and progress visualization.",
-      technologies: ["Android Studio", "Kotlin", "Java", "XML", "SharedPreferences"],
-      github: "https://github.com/Dimasha2002/WellnessTracker"
+      title: "TraceBack — Community Lost & Found App",
+      subtitle: "Individual Mobile App",
+      timeline: "Sep 2025 (1 month)",
+      role: "Individual Project — Full-stack Mobile Developer",
+      description: "Mobile app for reporting lost/found items, searching by location and category, and matching nearby users.",
+      problem: "Community members needed a simple way to report missing items and connect with finders in nearby neighborhoods.",
+      solution: "Built a location-aware mobile app for item reporting, search, and nearby matching.",
+      myContribution: "UI/UX flows, item reporting/search features, location matching, cloud storage, and authentication.",
+      buildPurpose: "Portfolio-ready app demonstrating end-to-end lost-and-found workflows focused on usability and locality.",
+      verification: "Manual testing for reporting, search, location matching, and login.",
+      lessonsLearned: "Mobile location handling, cloud sync, and intuitive reporting/search experiences.",
+      technologies: ["Android", "Kotlin", "Firebase Auth", "Firestore", "Google Maps", "Material Design"],
+      github: "https://github.com/Dimasha2002/TraceBackAPP",
+      image: "/traceback.png"
     }
   ]
 
@@ -126,9 +154,9 @@ function App() {
     { name: "Docker" },
     { name: "Kubernetes" },
     { name: "Postman" },
-    { name: "Android Development" },
+    { name: "Time Management" },
     { name: "Problem Solving" },
-    { name: "Time Management" }
+    { name: "Android Development" }
   ]
 
   return (
@@ -456,34 +484,63 @@ function App() {
       <section id="projects" className="projects">
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
-          <div className="projects-grid">
+          <div className="projects-list">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="project-content">
-                  <div className="project-header">
-                    <h3>{project.title}</h3>
-                    <div className="project-links">
-                      {project.live && (
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="live-link" title="View Live Demo">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                          </svg>
-                        </a>
-                      )}
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-icon" title="View on GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                      </a>
+              <div key={index} className="project-item">
+                <div className="project-card-grid">
+                  <div className="project-left">
+                    <div className="project-header-detail">
+                      <div>
+                        <h3>{project.title}</h3>
+                        {project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}
+                        {project.timeline && <p className="project-meta">{project.timeline} · {project.role}</p>}
+                        <p className="project-description">{project.description}</p>
+                      </div>
                     </div>
+                    {project.image && (
+                      <div className={`project-image ${project.imageClass || ''}`}>
+                        <img src={project.image} alt={project.title} />
+                      </div>
+                    )}
                   </div>
-                  <p>{project.description}</p>
-                  <div className="project-technologies">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="tech-tag">{tech}</span>
-                    ))}
+
+                  <div className="project-right">
+                    <div className="project-details-grid">
+                      <div className="detail-column">
+                        <div className="detail-item">
+                          <h4>Problem</h4>
+                          <p>{project.problem}</p>
+                        </div>
+                        <div className="detail-item">
+                          <h4>Technologies</h4>
+                          <p className="project-technologies">{project.technologies.join(' · ')}</p>
+                        </div>
+                        <div className="detail-item">
+                          <h4>My Contribution</h4>
+                          <p>{project.myContribution}</p>
+                        </div>
+                      </div>
+                      <div className="detail-column">
+                        <div className="detail-item">
+                          <h4>Solution</h4>
+                          <p>{project.solution}</p>
+                        </div>
+                        <div className="detail-item">
+                          <h4>Lessons Learned</h4>
+                          <p>{project.lessonsLearned}</p>
+                        </div>
+                        <div className="detail-item project-links-compact">
+                          {project.live && (
+                            <a href={project.live} target="_blank" rel="noopener noreferrer" className="live-link" title="View Live Demo">
+                              View Live
+                            </a>
+                          )}
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-icon" title="View on GitHub">
+                            View Code
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
