@@ -479,27 +479,26 @@ body {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
 }
 
-.certifications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .certification-item {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.2rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .certification-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
-  border-color: #667eea;
+  transform: translateY(-3px);
+  border-color: rgba(96, 165, 250, 0.18);
+  box-shadow: 0 14px 34px rgba(96, 165, 250, 0.12);
 }
 
 .certification-item h3 {
@@ -743,6 +742,74 @@ body {
   font-weight: 600;
   font-size: 0.88rem;
   transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Certificate action buttons (inline) */
+.cert-actions-inline {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cert-btn {
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cert-btn:hover { transform: translateY(-2px); }
+
+.cert-view,
+.cert-download {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-color: rgba(29,78,216,0.2);
+  box-shadow: 0 6px 18px rgba(29,78,216,0.12);
+}
+
+/* Certification card layout tweaks */
+.certification-item .project-card-grid {
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cert-actions-inline {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cert-btn {
+  min-width: 140px;
+  height: 48px;
+  padding: 0 1rem;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smaller variant for download when alone to avoid huge empty space */
+.certification-item .cert-download {
+  min-width: 140px;
+}
+
+@media (max-width: 980px) {
+  .certification-item .project-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-actions-inline {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 .project-links-compact .live-link {

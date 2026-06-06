@@ -159,6 +159,54 @@ function App() {
     { name: "Android Development" }
   ]
 
+  const certificates = [
+    {
+      title: "AI/ML Engineer - Stage 1",
+      issuer: "Centre for Open and Distance Education, Faculty of Computing, SLIIT",
+      viewUrl: "https://code.sliit.org/certificates/ooz2pnny58",
+      download: "/AIML1-SLIIT.pdf",
+    },
+    {
+      title: "AI/ML Engineer - Stage 2",
+      issuer: "Centre for Open and Distance Education, Faculty of Computing, SLIIT",
+      viewUrl: "https://code.sliit.org/certificates/f5etbxgfb5",
+      download: "/AIML2-SLIIT.pdf",
+    },
+    {
+      title: "Front-End Web Development",
+      issuer: "Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka",
+      download: "/frontend-web-dev-certificate.pdf"
+    },
+    {
+      title: "Server-side Web Programming",
+      issuer: "Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka",
+      download: "/Server-side_Web_Programming.pdf"
+    },
+    {
+      title: "Agile Project Management in ICT Projects",
+      issuer: "Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka",
+      download: "/Agile_Project_Management.pdf"
+    },
+    {
+      title: "Web Development Basics",
+      issuer: "IBM SkillBuild, Adobe Learning Manager",
+      viewUrl: "https://skills.yourlearning.ibm.com/certificate/share/626248598dewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI2NDEzNTUwUkVHIiwKICAib2JqZWN0SWQiIDogIkFMTS1DT1VSU0VfNDA1ODkzNyIKfQc846df278f-10",
+      download: "/Web Development Basics.pdf"
+    },
+    {
+      title: "Developing Sites for the Web",
+      issuer: "IBM SkillBuild, Adobe Learning Manager",
+      viewUrl: "https://skills.yourlearning.ibm.com/certificate/share/4443e8c86cewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTM4IiwKICAibGVhcm5lckNOVU0iIDogIjY0MTM1NTBSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQ00982a9ac2-10",
+      download: "/Developing Sites for the Web.pdf"
+    },
+    {
+      title: "Foundational C# with Microsoft",
+      issuer: "freeCodeCamp",
+      viewUrl: "https://freecodecamp.org/certification/dimasha/foundational-c-sharp-with-microsoft",
+      download: "/C# certificate.pdf"
+    }
+  ]
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -329,153 +377,45 @@ function App() {
       <section id="certifications" className="certifications">
         <div className="container">
           <h2 className="section-title">Certifications</h2>
-          <div className="certifications-grid">
-            <div className="certification-item">
-              <h3>AI/ML Engineer - Stage 1</h3>
-              <p>Centre for Open and Distance Education, Faculty of Computing, SLIIT</p>
-              <div className="cert-actions">
-                <a 
-                  href="https://code.sliit.org/certificates/ooz2pnny58" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  View Certificate
-                </a>
-                <a 
-                  href="/AIML1-SLIIT.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  Download Certificate
-                </a>
+          <div className="certifications-list">
+            {certificates.map((cert, i) => (
+              <div key={i} className="project-item certification-item">
+                <div className="project-card-grid">
+                  <div className="project-left">
+                    <div className="project-header-detail">
+                      <div>
+                        <h3>{cert.title}</h3>
+                        {cert.issuer && <p className="project-subtitle">{cert.issuer}</p>}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="project-right">
+                    <div className="project-details-grid">
+                      <div className="detail-column">
+                        <div className="detail-item">
+                          {cert.description && <p>{cert.description}</p>}
+                        </div>
+                      </div>
+                      <div className="detail-column">
+                        <div className="cert-actions-inline">
+                          {cert.viewUrl && (
+                            <a href={cert.viewUrl} target="_blank" rel="noopener noreferrer" className="cert-btn cert-view">
+                              View Certificate
+                            </a>
+                          )}
+                          {cert.download && (
+                            <a href={cert.download} target="_blank" rel="noopener noreferrer" className="cert-btn cert-download">
+                              Download Certificate
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="certification-item">
-              <h3>AI/ML Engineer - Stage 2</h3>
-              <p>Centre for Open and Distance Education, Faculty of Computing, SLIIT</p>
-              <div className="cert-actions">
-                <a 
-                  href="https://code.sliit.org/certificates/f5etbxgfb5" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  View Certificate
-                </a>
-                <a 
-                  href="/AIML2-SLIIT.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  Download Certificate
-                </a>
-              </div>
-            </div>
-            <div className="certification-item">
-              <h3>Front-End Web Development</h3>
-              <p>Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka</p>
-              <a 
-                href="/frontend-web-dev-certificate.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="cert-link"
-              >
-                Download Certificate
-              </a>
-            </div>
-            <div className="certification-item">
-              <h3>Server-side Web Programming</h3>
-              <p>Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka</p>
-              <a 
-                href="/Server-side_Web_Programming.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="cert-link"
-              >
-                Download Certificate
-              </a>
-            </div>
-            <div className="certification-item">
-              <h3>Agile Project Management in ICT Projects</h3>
-              <p>Centre for Open & Distance Learning (CODL), University of Moratuwa, Sri Lanka</p>
-              <a 
-                href="/Agile_Project_Management.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="cert-link"
-              >
-                Download Certificate
-              </a>
-            </div>
-            <div className="certification-item">
-              <h3>Web Development Basics</h3>
-              <p>IBM SkillBuild, Adobe Learning Manager</p>
-              <div className="cert-actions">
-                <a 
-                  href="https://skills.yourlearning.ibm.com/certificate/share/626248598dewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI2NDEzNTUwUkVHIiwKICAib2JqZWN0SWQiIDogIkFMTS1DT1VSU0VfNDA1ODkzNyIKfQc846df278f-10" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  View Certificate
-                </a>
-                <a 
-                  href="/Web Development Basics.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  Download Certificate
-                </a>
-              </div>
-            </div>
-            <div className="certification-item">
-              <h3>Developing Sites for the Web</h3>
-              <p>IBM SkillBuild, Adobe Learning Manager</p>
-              <div className="cert-actions">
-                <a 
-                  href="https://skills.yourlearning.ibm.com/certificate/share/4443e8c86cewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTM4IiwKICAibGVhcm5lckNOVU0iIDogIjY0MTM1NTBSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQ00982a9ac2-10" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  View Certificate
-                </a>
-                <a 
-                  href="/Developing Sites for the Web.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  Download Certificate
-                </a>
-              </div>
-            </div>
-            <div className="certification-item">
-              <h3>Foundational C# with Microsoft</h3>
-              <p>freeCodeCamp</p>
-              <div className="cert-actions">
-                <a 
-                  href="https://freecodecamp.org/certification/dimasha/foundational-c-sharp-with-microsoft" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  View Certificate
-                </a>
-                <a 
-                  href="/C# certificate.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="cert-link"
-                >
-                  Download Certificate
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
