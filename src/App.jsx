@@ -190,13 +190,11 @@ function App() {
     {
       title: "Web Development Basics",
       issuer: "IBM SkillBuild, Adobe Learning Manager",
-      viewUrl: "https://skills.yourlearning.ibm.com/certificate/share/626248598dewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI2NDEzNTUwUkVHIiwKICAib2JqZWN0SWQiIDogIkFMTS1DT1VSU0VfNDA1ODkzNyIKfQc846df278f-10",
       download: "/Web Development Basics.pdf"
     },
     {
       title: "Developing Sites for the Web",
       issuer: "IBM SkillBuild, Adobe Learning Manager",
-      viewUrl: "https://skills.yourlearning.ibm.com/certificate/share/4443e8c86cewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTM4IiwKICAibGVhcm5lckNOVU0iIDogIjY0MTM1NTBSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQ00982a9ac2-10",
       download: "/Developing Sites for the Web.pdf"
     },
     {
