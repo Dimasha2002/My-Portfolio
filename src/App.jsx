@@ -266,7 +266,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.7 }}
             >
-              Third year first semester student at Faculty of Computing, SLIIT. Passionate about creating innovative software solutions.
+              Software Engineering undergraduate at SLIIT with hands-on experience in full-stack web development, Android application development, and distributed systems. Skilled in React, Node.js, MongoDB, Docker, and Kubernetes, with a strong interest in building scalable and user-focused software solutions.
             </motion.p>
             <motion.div 
               className="hero-buttons"
@@ -329,14 +329,13 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm an undergraduate student at the Faculty of Computing, SLIIT, currently in my 
-                third year. I'm passionate about software development and technology, 
-                with a focus on creating innovative solutions through code.
+                I am a third-year Software Engineering undergraduate at the Faculty of Computing, SLIIT. I enjoy designing and developing software solutions that solve real-world problems through modern technologies and best development practices.
               </p>
               <p>
-                As a computing student, I'm constantly learning new technologies and developing 
-                my skills in various programming languages and frameworks. I enjoy tackling 
-                challenging problems and building projects that make a difference.
+                My experience includes full-stack web development, Android application development, RESTful API development, cloud-based deployment, and microservice architectures. Through academic and personal projects, I have gained practical experience with React, Node.js, MongoDB, Docker, Kubernetes, and mobile application development.
+              </p>
+              <p>
+                I am continuously improving my technical and problem-solving skills while exploring new technologies and software engineering practices. My goal is to contribute to innovative projects and grow as a professional software engineer.
               </p>
               <div className="about-stats">
                 <div className="stat">
@@ -503,7 +502,7 @@ function App() {
                   <strong>Phone:</strong> 0717754075
                 </div>
                 <div className="contact-method">
-                  <strong>Location:</strong> No 4/9, Lakeview, Agarawala, Aparekka, Matara, Sri Lanka
+                  <strong>Location:</strong>Matara, Sri Lanka
                 </div>
               </div>
             </div>
