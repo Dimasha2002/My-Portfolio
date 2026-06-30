@@ -64,7 +64,7 @@ function App() {
       myContribution: "Data models, REST APIs, Zoom & payment integration, core frontend components, and integration tests.",
       verification: "Integration tests and API validation for real-time teaching and payment flows.",
       lessonsLearned: "API integration, payment flow design, and real-time collaboration for education platforms.",
-      technologies: ["Node.js", "Express", "MongoDB", "React", "Socket.IO", "Zoom API", "PayHere", "JWT"],
+      technologies: ["Node.js", "Express", "MongoDB", "React", "Zoom API", "JWT"],
       github: "https://github.com/ChamudithaSanka/openlesson",
       live: "https://openlesson-sooty.vercel.app/",
       image: "/openlesson.png"
@@ -81,7 +81,7 @@ function App() {
       buildPurpose: "Deliver a minimal production-ready demo showing end-to-end teacher → student workflows.",
       verification: "Jest + Supertest unit/integration tests, E2E smoke tests, Postman API checks, and DB verification.",
       lessonsLearned: "Improved role-based access design, data modeling for performance, and UX edge-case discovery via E2E tests.",
-      technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT", "bcrypt", "Docker"],
+      technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React", "Vite", "Tailwind CSS", "JWT"],
       github: "https://github.com/Dimasha2002/eduquiz-platform-frontend",
       live: "https://eduquiz-platform-frontend.onrender.com/",
       image: "/eduquiz.png"
@@ -115,12 +115,12 @@ function App() {
       buildPurpose: "Production-ready mobile app supporting habit formation with offline-first persistence and reminders.",
       verification: "Unit tests, Espresso UI tests, manual device testing, notification simulation, and data verification.",
       lessonsLearned: "Offline-first persistence, WorkManager scheduling edge cases, Compose state management, and habit UX.",
-      technologies: ["Kotlin", "Jetpack Compose", "Room", "WorkManager", "Firebase Auth", "Retrofit", "Coroutines", "Hilt", "MPAndroidChart"],
+      technologies: ["Android", "Kotlin"],
       github: "https://github.com/Dimasha2002/MyWellness",
       image: "/mywellness.png"
     },
     {
-      title: "TraceBack — Community Lost & Found App",
+      title: "TraceBack — Community Lost & Found",
       subtitle: "Individual Mobile App",
       timeline: "Sep 2025 (1 month)",
       role: "Individual Project — Full-stack Mobile Developer",
@@ -131,7 +131,7 @@ function App() {
       buildPurpose: "Portfolio-ready app demonstrating end-to-end lost-and-found workflows focused on usability and locality.",
       verification: "Manual testing for reporting, search, location matching, and login.",
       lessonsLearned: "Mobile location handling, cloud sync, and intuitive reporting/search experiences.",
-      technologies: ["Android", "Kotlin", "Firebase Auth", "Firestore", "Google Maps", "Material Design"],
+      technologies: ["Android", "Kotlin"],
       github: "https://github.com/Dimasha2002/TraceBackAPP",
       image: "/traceback.png"
     }
